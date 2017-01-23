@@ -1,0 +1,340 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.75in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\normalsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Glassman CV},
+	pdfauthor={Elena Leah Glassman},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Elena Leah Glassman}\\[0.5cm]
+University of California, Berkeley\\
+%354 Hearst Memorial Mining Building\\
+Berkeley, CA USA\\%[.2cm] \texttt{94720} 
+\texttt{+1 215-694-9631}\\
+ %\\%[.2cm]
+\href{mailto:glassman@alum.mit.edu}{glassman@alum.mit.edu} \\
+\href{http://eglassman.github.io/}{eglassman.github.io}\\ 
+
+%\vfill
+%Born:  March 12, 1879---Ulm, Germany\\
+%Nationality:  German/American
+
+%%\hrule
+% \section*{Current position}
+% \emph{Postdoctoral Scholar}, Berkeley Institute of Design, UC Berkeley EECS
+
+%%\hrule
+\section*{Areas of specialization}
+Human-computer interaction • Programming education at scale • Program synthesis
+
+%%\hrule
+\section*{Academic positions}
+\noindent
+\years{2016-present}Postdoctoral Scholar\hfill Berkeley Institute of Design, EECS, UC Berkeley\\
+\years{2012-2016}Graduate researcher\hfill User Interface Design Group, CS \& AI Lab, MIT\\
+\years{2010-2011}Visiting researcher\hfill Biomimetics \& Dexterous Manipulation Lab, Stanford University\\
+\years{2008-2011}Graduate researcher\hfill Robot Locomotion Group, CS \& AI Lab, MIT\\
+\years{2004-2008}Undergraduate researcher\hfill CS \& AI Lab, MIT\\
+\years{2003-2004}Volunteer researcher\hfill EEG Lab, Princeton University
+
+%%\hrule
+\section*{Industry positions}
+\noindent
+\years{2016}Consultant \hfill Search, Google\\
+\years{2015}User experience research intern \hfill Search, Google\\
+\years{2014}Design research intern \hfill neXus Research Team, Microsoft Research\\
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2016}\textsc{Ph.D.} in Electrical Engineering \& Computer Science\hfill MIT\\
+\years{2010}\textsc{M.Eng.} in Electrical Engineering \& Computer Science\hfill MIT\\
+\years{2008}\textsc{B.S.} in Electrical Science \& Engineering\hfill MIT\\
+
+\section*{Selected fellowships and scholarships}
+\noindent
+\years{2014}MIT Amar Bose Teaching Fellow, for developing innovative tools for teaching CS at scale\\
+\years{2011-2014}NSF Graduate Research Fellow\\
+\years{2008-2011}National Defense Science and Engineering Graduate Fellow\\
+\years{2004} IEEE President's Scholarship (\$10,000)\\
+\years{2003} Intel Foundation Young Scientist Award (\$50,000)\\%, top 3 at Intel International Science \& Engineering Fair\\
+
+%\hrule
+\section*{Selected honors \& awards}
+\noindent
+%\years{2015}Invited research presentation, Rising Stars workshop for aspiring CS faculty, MIT
+\years{2016}Audience Choice Award, MIT Can Talk speech competition\\
+\years{2015}Accepted into Rising Stars workshop for aspiring CS faculty\\
+\years{2009}Masterworks Oral Thesis Presentation Award, MIT EECS\\
+\years{2008}Inducted into Eta Kappa Nu, EECS Honor Society\\
+\years{2004}Valedictorian \& commencement speaker, Central Bucks High School West\\
+\years{2004}Inducted into the National Gallery for America's Young Inventors\\
+\years{2003} Best of Category: Computer Science (\$5,000), Intel International Science and Engineering Fair\\
+
+\section*{Teaching}
+\years{2016}Co-lecturer, User Interface Design \& Implementation, (175 students) \hfill MIT EECS\\
+\years{2013}Co-lecturer, introductory python programming \hfill MIT MEET, Jerusalem\\
+\years{2013}Video creator, radio receiver technology\hfill MIT Teaching \& Learning Lab\\
+\years{2012-2014}Teaching assistant, Computation Structures\hfill MIT EECS\\
+\years{2011}Teaching assistant, Introduction to EECS 1\hfill MIT EECS\\
+\years{2011}Graduate Student Teaching Certificate\hfill MIT Teaching \& Learning Lab\\
+\years{2006-2011}Tutor, Signals, Systems, \& Probabilistic Systems Analysis\hfill MIT EECS Honor Society
+
+\section*{Human-Computer Interaction Publications}
+
+\subsection*{Journal articles}
+\noindent
+%\emph{Learning at scale}\\
+\years{2015 TOCHI}\textbf{EL Glassman}, J Scott, R Singh, P Guo, RC Miller. “OverCode: visualizing variation in student solutions to programming problems at scale." \emph{ACM Transactions on Computer-Human Interaction}, 22 (2).
+%\emph{Biomedical signal processing}\\
+%\years{2005}\textbf{EL Glassman}. “A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs." \emph{IEEE Transactions on Biomedical Engineering (TBME)} 52 (11), 1851-1862.\\
+
+\subsection*{Conference papers}
+\noindent
+%\emph{Learning at scale}\\
+\years{2017 L@S}A Head, \textbf{EL Glassman}, G Soares, R Suzuki, L Figueredo, L D'Antoni and B Hartmann. ``Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis.'' \emph{ACM Learning at Scale}.\\
+\years{2016 ASIST}\textbf{EL Glassman}, DM Russell. ``DocMatrix: Self-Teaching from Multiple Sources.'' ASIS\&T Annual Meeting.\\
+\years{2016 CSCW}\textbf{EL Glassman}, A Lin, CJ Cai, RC Miller. “Learnersourcing Personalized Hints." \emph{ACM Computer-Supported Cooperative Work and Social Computing}.\\
+\years{2015 UIST}\textbf{EL Glassman}, L Fischer, J Scott, RC Miller. “Foobaz: Variable Name Feedback for Student Code at Scale." \emph{ACM Symposium on User Interface Software \& Technology}.\\
+\years{2015 CHI}\textbf{EL Glassman}, J Kim, A Monroy-Hernández, MR Morris. “Mudslide: A Spatially Anchored Census of Student Confusion for Online Lecture Videos." \emph{ACM Conference on Human Factors in Computing Systems}. \textbf{Best of CHI Honorable Mention}.\\
+\years{2015 CHI}J Kim, \textbf{EL Glassman}, A Monroy-Hernández, MR Morris. “RIMES: Embedding Interactive Multimedia Exercises in Lecture Videos." \emph{ACM Conference on Human Factors in Computing Systems}.\\
+\years{2013 ICER}\textbf{EL Glassman}, N Gulley, RC Miller. “Toward Facilitating Assistance to Students Attempting Engineering Design Problems." \emph{ACM International Computing Education Research}.\\[.2cm]
+%\emph{Underactuated robotics}\\
+%\years{2012}\textbf{EL Glassman}, AL Desbiens, M Tobenkin, M Cutkosky, R Tedrake. ``Region of attraction estimation for a perching aircraft: A Lyapunov method exploiting barrier certificates.'' \emph{IEEE International Conference on Robotics and Automation (ICRA)}.\\
+%\years{2010}\textbf{EL Glassman}, R Tedrake. ``A quadratic regulator-based heuristic for rapidly exploring state space.'' \emph{IEEE International Conference on Robotics and Automation (ICRA)}.\\[.2cm]
+%\emph{Biomedical signal processing}\\
+%\years{2006}\textbf{EL Glassman}, JV Guttag. ``Reducing the number of channels for an ambulatory patient-specific EEG-based epileptic seizure detector by applying recursive feature elimination.'' \emph{IEEE Engineering in Medicine and Biology Society (EMBS)}.\\
+
+\subsection*{Technology Reports}
+\noindent
+%\emph{Interpretable Machine Learning}\\
+\years{2015}B Kim, \textbf{EL Glassman}, B Johnson, J Shah. ``iBCM: Interactive Bayesian Case Model Empowering Humans via Intuitive Interaction.'' MIT CSAIL TR-2015-010.
+
+\subsection*{Book Chapters}
+\noindent
+%\emph{Learning at scale}\\
+\years{2016}JJ Williams, J Kim, \textbf{EL Glassman}, A Rafferty, W Lasecki. ``Making Static Lessons Adaptive through Crowdsourcing \& Machine Learning.'' \emph{Volume 4 of Design Recommendations for Intelligent Tutoring Systems}. US Army Research Laboratory.
+
+\subsection*{Theses}
+\noindent
+%\emph{Learning at scale}\\
+\years{2016}\textbf{EL Glassman}. ``Clustering and Visualizing Solution Variation in Massive Programming Classes.'' MIT EECS Ph.D. Thesis.\\[.2cm]
+%\emph{Underactuated robotics}\\
+%\years{2010}\textbf{EL Glassman}. ``A quadratic regulator-based heuristic for rapidly exploring state space.'' MIT EECS M.Eng. Thesis.\\
+
+\section*{Prior Publications}
+
+\subsection*{Underactuated robotics}
+\noindent
+\emph{Conference publications}\\
+\years{2012 ICRA}\textbf{EL Glassman}, AL Desbiens, M Tobenkin, M Cutkosky, R Tedrake. ``Region of attraction estimation for a perching aircraft: A Lyapunov method exploiting barrier certificates.'' \emph{IEEE International Conference on Robotics and Automation}.\\
+\years{2010 ICRA}\textbf{EL Glassman}, R Tedrake. ``A quadratic regulator-based heuristic for rapidly exploring state space.'' \emph{IEEE International Conference on Robotics and Automation}.\\[.2cm]
+\emph{Theses}\\
+\years{2010}\textbf{EL Glassman}. ``A quadratic regulator-based heuristic for rapidly exploring state space.'' MIT EECS M.Eng. Thesis.\\
+
+\subsection*{Biomedical signal processing}
+\noindent
+\emph{Journal articles}\\
+\years{2005 TBME}\textbf{EL Glassman}. “A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs." \emph{IEEE Transactions on Biomedical Engineering} 52 (11), 1851-1862.\\[.2cm]
+\emph{Conference publications}\\
+\years{2006 EMBS}\textbf{EL Glassman}, JV Guttag. ``Reducing the number of channels for an ambulatory patient-specific EEG-based epileptic seizure detector by applying recursive feature elimination.'' \emph{IEEE Engineering in Medicine and Biology Society}.
+
+
+\section*{Talks}
+
+\subsection*{Seminars}
+\noindent
+\years{2016}Computer Science Deptartment, Brown University \textit{(upcoming)}\\
+\years{2016}Berkeley Institute of Design, UC Berkeley\\
+\years{2016}Thesis Defense, MIT CSAIL\\
+\years{2015}Cooperation Group, Harvard Berkman Center\\
+\years{2015}Computer Science Department, Duke University\\
+\years{2015}Human-Computer Interaction, Stanford University\\
+\years{2015}HarvardX, Harvard University\\
+\years{2015}Computer Science Department, Wellesley College\\
+\years{2014}DUB Seminar, HCI \& Design, University of Washington\\
+\years{2001}Special Seminar, Schlumberger-Doll Research Center\\
+
+\subsection*{Conference presentations}
+\noindent
+\years{2016}DocMatrix: Self-Teaching from Multiple Sources. \\\emph{ASIS\&T Annual
+Meeting}, Copenhagen.\\
+\years{2016} Learnersourcing Personalized Hints. \\\emph{ACM CSCW}, San Francisco.\\
+\years{2015} Foobaz: Variable Name Feedback for Student Code at Scale. \\\emph{ACM UIST}, Charlotte NC.\\
+\years{2015}Mudslide: A Spatially Anchored Census of Student Confusion for Online Lecture Videos. \\\emph{ACM CHI}, Seoul.\\
+\years{2015}OverCode: Visualizing variation in student solutions to programming problems at scale. \\\emph{ACM CHI}, Seoul.\\
+\years{2013}Toward Facilitating Assistance to Students Attempting Engineering Design Problems. \\\emph{ACM ICER}, San Diego.\\
+\years{2012}Region of attraction estimation for a perching aircraft: A Lyapunov method exploiting barrier certificates. \\\emph{IEEE ICRA}, St. Paul.\\
+\years{2010}A quadratic regulator-based heuristic for rapidly exploring state space. \\\emph{IEEE ICRA}, Anchorage.\\
+\years{2006}Reducing the number of channels for an ambulatory patient-specific EEG-based epileptic seizure detector by applying recursive feature elimination. \\\emph{IEEE EMBS}, New York City.\\
+
+\subsection*{Workshops}
+\noindent
+\years{2017}Co-Organizer. ``Program Synthesis Hackathon'' with the Microsoft Program Synthesis using Examples SDK (PROSE), UC Berkeley.\\
+\years{2016} Presenter. ``Learning Latent Student Design Decisions in Python Programming Classes.'' Workshop on Machine Learning for Digital Education and Assessment Systems, \emph{International Conference on Machine Learning (ICML)}.\\
+\years{2015} Presenter. Rising Stars Workshop for aspiring CS faculty, MIT.\\
+\years{2015} Presenter. ``Interacting with massive numbers of student solutions.'' Doctoral consortium, \emph{ACM Symposium on User Interface Software \& Technology (UIST)}.\\
+\years{2013} Presenter. ``Visualizing and classifying multiple solutions to engineering design problems.'' Doctoral consortium, \emph{ACM International Computing Education Research (ICER)}.
+
+\subsection*{Poster and demo presentations}
+\noindent
+\years{2016}{\bf EL Glassman}. ``Learning Latent Student Design Decisions in Massive Python Programming Classes.'' \emph{New England Machine Learning Day}.\\
+\years{2016}{\bf EL Glassman}, RC Miller. ``Leveraging Learners for Teaching Programming and Hardware Design at Scale.'' \emph{ACM Computer-Supported Cooperative Work and Social Computing (CSCW)}.\\
+\years{2015}{\bf EL Glassman}, CJ Terman, RC Miller. ``Learner-Sourcing in an Engineering Class at Scale.'' \emph{ACM Learning at Scale Conference (L$@$S)}.\\
+\years{2014}{\bf EL Glassman}. ``Interacting with massive numbers of student solutions.'' \emph{ACM Symposium on User Interface Software \& Technology (UIST)}.\\
+\years{2014}{\bf EL Glassman}, R Singh, RC Miller. ``Feature engineering for clustering student solutions.'' \emph{ACM Learning at Scale Conference (L$@$S)}.\\
+\years{2009}{\bf EL Glassman}. Women in Machine Learning Workshop, \emph{Neural Information Processing Systems (NIPS)}.
+
+
+\section*{Selected Press}
+%\noindent
+\years{2015}\emph{MIT News Homepage Spotlight}, ``Reviewing online homework at scale'' (research profile)\\
+\years{2015}\emph{Reddit's Upvoted podcast} guest\\
+\years{2014}\emph{WIRED} opinion piece, ``MIT Computer Scientists Demonstrate the Hard Way That Gender Still Matters'' co-author\\
+\years{2004}\emph{New York Times}, ``Not Too Young for a Patent'' (personal profile)\\
+\years{2003}\emph{CNN} Lou Dobbs Tonight, ``America's Bright Future'' (personal profile)\\
+\years{2003}\emph{CNN} American Morning guest\\
+\years{2003}\emph{Science} ``Rising Stars'' Vol. 300. Issue 5624, pp. 1368 (personal profile)\\
+
+
+
+%\hrule
+%\section*{Certifications}
+%\years{2011}Graduate Student Teaching Certificate, MIT Teaching \& Learning Lab\\
+%\years{2002}Amatuer (Ham) Radio License, American Radio Relay League (ARRL)\\
+
+%\hrule
+\section*{Leadership}
+
+\subsection*{MIT student groups}
+\noindent
+\years{2013-2015}President, Middle East Education through Technology\\
+%\years{2012}Co-organizer, MIT edTech reading group\\
+\years{2008-2009}Vice-President, Eta Kappa Nu EECS honor society\\
+
+%\hrule
+\subsection*{Research mentoring}
+\noindent
+\years{2016}Eric Pai, UC Berkeley EECS undergraduate\\
+\years{2016}Michelle Tian, UC Berkeley EECS undergraduate\\
+\years{2016}Daniel Nguyen, UC Berkeley EECS undergraduate\\
+\years{2016}Andrew Head, UC Berkeley EECS Ph.D. student\\
+\years{2016}Sindy Tan, Harvard EECS undergraduate\\
+\years{2015-2016}Stacey Terman, MIT EECS M.Eng. student\\
+%\years{2012}Co-organizer, MIT edTech reading group\\
+\years{2015}Aaron Lin, MIT EECS undergraduate\\
+
+\subsection*{Outreach}
+\noindent
+\years{2016}Panelist, MIT EECS SuperUROP (Undergraduate Research) Seminar\\
+\years{2015}Invited speaker, GirlTechPower summer camp for girls\\
+\years{2015}Panelist, Women Techmaker's Summit at Google Cambridge\\
+\years{2014-2015}Invited speaker, MIT CSAIL Hour of Code event for local schools\\
+\years{2014}Reddit AMA on gender, CS, and academia with Jean Yang and Neha Nerula\\
+\years{2013}Mentor, Harvard Women in CS ``Women Engineers Code Hackathon''\\
+\years{2013}Panelist, MIT EECS Teaching Assistant Orientation\\
+\years{2011}MIT Robot Locomotion Group representative, Cambridge Science Festival\\
+\years{2011}MIT Robot Locomotion Group representative, New Hampshire TechFest\\
+\years{2008, 2011}Invited speaker, MIT Women's Technology Program\\
+\years{2008}Invited speaker, MIT CSAIL Campus Preview Weekend\\
+
+\section*{Service}
+%\hrule
+\subsection*{Department}
+\noindent
+\years{2006-2008}MIT EECS Department Education Committee member\\
+\years{2005}MIT Council on Educational Technology member\\
+
+%\hrule
+\subsection*{Profession}
+\noindent
+\years{2017}ACM UIST Registration Chair\\
+\years{2015--}ACM CHI, UIST, CSCW reviewer\\
+%\years{2016}ACM CSCW reviewer\\
+%\years{2015}ACM UIST reviewer\\
+\years{2015}ACM CHI session chair, social media \& citizen science\\
+\years{2015}ACM CHI Works-in-Progress Program Committee member\\
+
+
+
+
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+%\fontspec{Times New Roman}
+\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+\href{http://eglassman.github.io/CV.pdf}{http://eglassman.github.io/CV.pdf}}
+\end{center}
+
+\end{document}
