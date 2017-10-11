@@ -24,6 +24,8 @@
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage{xunicode}
 \usepackage{xltxtra}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
 \defaultfontfeatures{Mapping=tex-text}
 %\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
 %\setmonofont[Scale=0.8]{Monaco}
@@ -88,7 +90,7 @@ Berkeley, CA USA\\%[.2cm] \texttt{94720}
 
 %%\hrule
 \section*{Areas of specialization}
-Human-computer interaction • Program synthesis • Programming education at scale 
+Human-computer interaction • Machine Teaching • Programming education at scale 
 
 %%\hrule
 \section*{Academic positions}
@@ -242,100 +244,193 @@ Human-computer interaction • Program synthesis • Programming education at sc
 
 \years{2011}Graduate Student Teaching Certificate\hfill MIT Teaching \& Learning Lab\\
 
-\section*{Publications in Human-Computer Interaction}
+\section*{Publications}
+
+
+\subsection*{Theses}
+\noindent
+\years{MIT EECS}``Clustering and Visualizing Solution Variation in Massive Programming Classes''\\ %\textbf{E Glassman}\\ 
+\textsc{Ph.D.} Thesis, MIT Electrical Engineering \& Computer Science, 2016. \\\\
+\years{MIT EECS}``A quadratic regulator-based heuristic for rapidly exploring state space''\\
+%\textbf{E Glassman} \\
+\textsc{M.Eng.} Thesis, MIT Electrical Engineering \& Computer Science, 2010.\\
 
 \subsection*{Journal articles}
 \noindent
 %\emph{Learning at scale}\\
-\years{2015 TOCHI}OverCode: visualizing variation in student solutions to programming problems at scale\\\textbf{E Glassman}, J Scott, R Singh, P Guo, RC Miller\\ \emph{ACM Transactions on Computer-Human Interaction}, 22 (2)\\
+\years{2015 TOCHI}
+\textbf{E Glassman}, J Scott, R Singh, P Guo, RC Miller\\
+``OverCode: visualizing variation in student solutions to programming problems at scale''\\ 
+\emph{ACM Transactions on Computer-Human Interaction}, 22 (2), April 2015.\\
+{\small Special Issue on Online Learning at Scale}\\\\
+\years{2005 TBME}
+\textbf{E Glassman}\\ 
+``A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs''\\
+\emph{IEEE Transactions on Biomedical Engineering} 52 (11), 1851-1862, Nov. 2005.\\
 %Online Learning at Scale Special Issue
 %\emph{Biomedical signal processing}\\
 %\years{2005}\textbf{EL Glassman}. “A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs." \emph{IEEE Transactions on Biomedical Engineering (TBME)} 52 (11), 1851-1862.\\
 
-\subsection*{Conference papers}
+\subsection*{Refereed conference papers}
+
+\small{Top-tier ACM conferences in human-computer interaction, i.e., CHI, CSCW, and UIST, are highly selective venues intended for archival papers only. These conferences are comparable or exceed many IEEE journals in their selectivity, visibility, and impact. For more details, see ``Selectivity and Impact'' by Jilin Chen and Joseph Konstan.}\\\\
 \noindent
 %\emph{Learning at scale}\\
-
-\years{2017 L@S}Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis\\A Head, \textbf{E Glassman}, G Soares, R Suzuki, L Figueredo, L D'Antoni and B Hartmann\\  ACM Learning at Scale\\
+\years{2017 CHI}\emph{In submission, details available upon request}\\
+Project name: Visualizing code examples at scale\\\\
+\years{2017 CHI}\emph{In submission, details available upon request}\\
+Project name: Mixed-initiative code example extraction\\\\
+%\years{2017}Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis\\A Head, \textbf{E Glassman}, G Soares, R Suzuki, L Figueredo, L D'Antoni and B Hartmann\\  ACM Learning at Scale\\
+%\emph{13\% acceptance rate}\\\\
+\years{2017 L@S}A Head, \textbf{E Glassman}, G Soares, R Suzuki, L Figueredo, L D'Antoni and B Hartmann\\
+``Writing Reusable Code Feedback at Scale with Mixed-Initiative Program Synthesis''\\
+\emph{ACM Learning at Scale} (L@S), 2017.\\
 \emph{13\% acceptance rate}\\\\
-\years{2017 VL/HCC}TraceDiff: Debugging Unexpected Code Behavior Using Trace Divergences\\ R Suzuki, G Soares, A Head, \textbf{E Glassman}, R Reis, M Mongiovi, L D'Antoni, and B Hartmann\\ IEEE Symposium on Visual Languages and Human-Centric Computing\\
+\years{2017 VL/HCC}R Suzuki, G Soares, A Head, \textbf{E Glassman}, R Reis, M Mongiovi, L D'Antoni, and B Hartmann\\
+``TraceDiff: Debugging Unexpected Code Behavior Using Trace Divergences''\\ 
+\emph{IEEE Symposium on Visual Languages and Human-Centric Computing} (VL/HCC), 2017.\\
 \emph{29\% acceptance rate}\\\\
-\years{2016 CSCW}Learnersourcing Personalized Hints\\ \textbf{E Glassman}, A Lin, CJ Cai, RC Miller\\ ACM Computer-Supported Cooperative Work and Social Computing\\
+\years{2016 CSCW}
+\textbf{E Glassman}, A Lin, C Cai, R Miller\\
+``Learnersourcing Personalized Hints''\\  
+\emph{ACM Computer-Supported Cooperative Work and Social Computing} (CSCW), 2017.\\
 \emph{25\% acceptance rate}\\\\
-\years{2016 ASIST}DocMatrix: Self-Teaching from Multiple Sources\\ \textbf{E Glassman}, DM Russell\\ ASIS\&T Annual Meeting\\
+\years{2016 ASIST}
+\textbf{E Glassman}, D Russell\\ 
+``DocMatrix: Self-Teaching from Multiple Sources''\\ 
+ASIS\&T Annual Meeting, 2016.\\
 \emph{40\% acceptance rate}\\\\
-\years{2015 UIST}Foobaz: Variable Name Feedback for Student Code at Scale\\\textbf{E Glassman}, L Fischer, J Scott, RC Miller\\ ACM Symposium on User Interface Software \& Technology\\
+\years{2015 UIST}\textbf{E Glassman}, L Fischer, J Scott, R Miller\\ 
+``Foobaz: Variable Name Feedback for Student Code at Scale''\\
+\emph{ACM Symposium on User Interface Software \& Technology} (UIST), 2015.\\
 \emph{23.6\% acceptance rate}\\\\
 %\newpage
-\years{2015 CHI}Mudslide: A Spatially Anchored Census of Student Confusion for Online Lecture Videos\\ \textbf{E Glassman}, J Kim, A Monroy-Hernández, MR Morris\\  \emph{ACM Conference on Human Factors in Computing Systems}\\ 
+\years{2015 CHI}
+\textbf{E Glassman}, J Kim, A Monroy-Hernández, MR Morris\\
+``Mudslide: A Spatially Anchored Census of Student Confusion for Online Lecture Videos''\\   
+\emph{ACM Conference on Human Factors in Computing Systems} (CHI), 2015.\\ 
 \emph{23\% acceptance rate}\\
 \textbf{Best of CHI Honorable Mention}\\\\
-\years{2015 CHI}RIMES: Embedding Interactive Multimedia Exercises in Lecture Videos\\ J Kim, \textbf{EL Glassman}, A Monroy-Hernández, MR Morris\\  ACM Conference on Human Factors in Computing Systems\\
+\years{2015 CHI}
+J Kim, \textbf{EL Glassman}, A Monroy-Hernández, MR Morris\\ 
+``RIMES: Embedding Interactive Multimedia Exercises in Lecture Videos''\\  
+\emph{ACM Conference on Human Factors in Computing Systems} (CHI), 2015.\\ 
 \emph{23\% acceptance rate}\\\\
-\years{2013 ICER}Toward Facilitating Assistance to Students Attempting Engineering Design Problems\\\textbf{E Glassman}, N Gulley, RC Miller\\  ACM International Computing Education Research\\
-\emph{33\% acceptance rate}\\
-[.2cm]
+\years{2013 ICER}
+\textbf{E Glassman}, N Gulley, RC Miller\\
+``Toward Facilitating Assistance to Students Attempting Engineering Design Problems''\\  
+\emph{ACM International Computing Education Research} (ICER), 2013.\\
+\emph{33\% acceptance rate}\\\\
+\years{2012 ICRA}
+\textbf{E Glassman}, A Desbiens, M Tobenkin, M Cutkosky, and R Tedrake\\
+``Region of attraction estimation for a perching aircraft: A Lyapunov method exploiting barrier certificates''\\
+\emph{IEEE International Conference on Robotics and Automation} (ICRA), 2012.\\
+\emph{40\% acceptance rate}\\\\
+\years{2010 ICRA}
+\textbf{E Glassman} and R Tedrake\\
+``A quadratic regulator-based heuristic for rapidly exploring state space''\\
+\emph{IEEE International Conference on Robotics and Automation} (ICRA), 2010.\\\\
+\years{2006 EMBS}
+\textbf{E Glassman}, J Guttag \\
+``Reducing the number of channels for an ambulatory patient-specific EEG-based epileptic seizure detector by applying recursive feature elimination''\\
+\emph{IEEE Engineering in Medicine and Biology Society} (EMBS), 2006.
+
+%[.2cm]
 %\emph{Underactuated robotics}\\
 %\years{2012}\textbf{EL Glassman}, AL Desbiens, M Tobenkin, M Cutkosky, R Tedrake. ``Region of attraction estimation for a perching aircraft: A Lyapunov method exploiting barrier certificates.'' \emph{IEEE International Conference on Robotics and Automation (ICRA)}.\\
 %\years{2010}\textbf{EL Glassman}, R Tedrake. ``A quadratic regulator-based heuristic for rapidly exploring state space.'' \emph{IEEE International Conference on Robotics and Automation (ICRA)}.\\[.2cm]
 %\emph{Biomedical signal processing}\\
 %\years{2006}\textbf{EL Glassman}, JV Guttag. ``Reducing the number of channels for an ambulatory patient-specific EEG-based epileptic seizure detector by applying recursive feature elimination.'' \emph{IEEE Engineering in Medicine and Biology Society (EMBS)}.\\
 
-\subsection*{Technology Reports}
+\subsection*{MIT Technology Reports}
 \noindent
 %\emph{Interpretable Machine Learning}\\
-\years{2015 MIT}iBCM: Interactive Bayesian Case Model Empowering Humans via Intuitive Interaction\\B Kim, \textbf{E Glassman}, B Johnson, J Shah\\  MIT CSAIL TR-2015-010
+\years{2015 CSAIL}
+B Kim, \textbf{E Glassman}, B Johnson, J Shah\\
+``iBCM: Interactive Bayesian Case Model Empowering Humans via Intuitive Interaction''\\  MIT CSAIL TR-2015-010, April 2015.
 
 \subsection*{Book Chapters}
 \noindent
 %\emph{Learning at scale}\\
-\years{2016 US Army}Making Static Lessons Adaptive through Crowdsourcing \& Machine Learning\\ JJ Williams, J Kim, \textbf{E Glassman}, A Rafferty, W Lasecki\\  Volume 4 of Design Recommendations for Intelligent Tutoring Systems\\US Army Research Laboratory
+\years{2016}
+JJ Williams, J Kim, \textbf{E Glassman}, A Rafferty, W Lasecki\\
+Making Static Lessons Adaptive through Crowdsourcing \& Machine Learning\\ 
+\emph{Design Recommendations for Intelligent Tutoring Systems: Domain Modeling} Vol. 4, US Army Research Laboratory, July 2016.
+%\\US Army Research Laboratory
 
-\subsection*{Theses}
-\noindent
+%\subsection*{Theses}
+%\noindent
 %\emph{Learning at scale}\\
-\years{2016 MIT}Clustering and Visualizing Solution Variation in Massive Programming Classes\\ \textbf{E Glassman}\\ MIT EECS Ph.D. Thesis\\[.2cm]
+%\years{2016 MIT}Clustering and Visualizing Solution Variation in Massive Programming Classes\\ \textbf{E Glassman}\\ MIT EECS Ph.D. Thesis\\[.2cm]
 %\emph{Underactuated robotics}\\
 %\years{2010}\textbf{EL Glassman}. ``A quadratic regulator-based heuristic for rapidly exploring state space.'' MIT EECS M.Eng. Thesis.\\
 
 \subsection*{Posters and demos}
 \noindent
-\years{2017 CHI}Exploring the Design Space of Automatically Synthesized Hints for Introductory Programming Assignments\\R Suzuki, G Soares, {\bf E Glassman}, A Head, L D'Antoni, and B Hartmann \\[.1cm] %ACM CHI Conference on Human Factors in Computing Systems\\
-\years{2017 L@S} Teamscope: Scalable Team Evaluation via Automated Metric Mining for Communication, Organization, Execution, and Evolution\\ A Ju, {\bf E Glassman}, A Fox\\[.1cm] %ACM Learning at Scale Conference\\
-\years{2016 ICML}Learning Latent Student Design Decisions in Python Programming Classes\\{\bf E Glassman} \\Workshop on Machine Learning for Digital Education and Assessment Systems\\[.1cm]
-%International Conference on Machine Learning\\
-\years{2016 MSR}Learning Latent Student Design Decisions in Massive Python Programming Classes \\{\bf E Glassman} \\New England Machine Learning Day\\[.1cm]
-\years{2016 CSCW}Leveraging Learners for Teaching Programming and Hardware Design at Scale\\{\bf E Glassman}, R Miller \\[.1cm]%ACM Computer-Supported Cooperative Work and Social Computing\\
-\years{2016 CSCW}Scaling Up Qualitative Data Analysis With Interfaces Powered by Interpretable Machine Learning \\{\bf E Glassman}, B Kim, J Shah\\Human Centered Data Science Workshop\\[.1cm]%ACM Symposium on User Interface Software \& Technology\\ 
+\years{2017 CHI}
+R Suzuki, G Soares, {\bf E Glassman}, A Head, L D'Antoni, and B Hartmann\\
+``Exploring the Design Space of Automatically Synthesized Hints for Introductory Programming Assignments'' \\ \emph{ACM CHI Conference on Human Factors in Computing Systems} (CHI), 2017.\\\\
+\years{2017 L@S} 
+A Ju, {\bf E Glassman}, A Fox\\
+``Teamscope: Scalable Team Evaluation via Automated Metric Mining for Communication, Organization, Execution, and Evolution''\\
+\emph{ACM Learning at Scale Conference} (L@S), 2017.\\\\
+\years{2016 ICML}
+{\bf E Glassman} \\
+``Learning Latent Student Design Decisions in Python Programming Classes''\\
+Workshop on Machine Learning for Digital Education and Assessment Systems\\
+\emph{International Conference on Machine Learning} (ICML), 2016.\\\\
+\years{2016 NEML}
+{\bf E Glassman} \\
+``Learning Latent Student Design Decisions in Massive Python Programming Classes''\\
+\emph{New England Machine Learning Day} (NEML), 2016.\\\\
+\years{2016 CSCW}
+{\bf E Glassman}, R Miller \\
+``Leveraging Learners for Teaching Programming and Hardware Design at Scale''\\
+\emph{ACM Computer-Supported Cooperative Work and Social Computing} (CSCW), 2016.\\\\
+\years{2016 CSCW}
+{\bf E Glassman}, B Kim, J Shah\\
+``Scaling Up Qualitative Data Analysis With Interfaces Powered by Interpretable Machine Learning'' \\Human Centered Data Science Workshop\\
+\emph{ACM Computer-Supported Cooperative Work and Social Computing} (CSCW), 2016.\\\\
 %\years{2016 MIT} MIT CSAIL Research Party, Cambridge, MA.\\
 %\years{2015 MIT}{\bf EL Glassman}. Rising Stars Workshop for aspiring CS faculty, MIT.\\
 %\newpage
-\years{2015 L$@$S}Learner-Sourcing in an Engineering Class at Scale\\{\bf E Glassman}, C Terman, R Miller\\[.1cm] %ACM Learning at Scale Conference\\
-\years{2014 UIST}Interacting with Massive Numbers of Student Solutions\\{\bf E Glassman}\\[.1cm] %ACM Symposium on User Interface Software \& Technology\\
-\years{2014 L$@$S}Feature Engineering for Clustering Student Solutions\\{\bf E Glassman}, R Singh, R Miller%\\ACM Learning at Scale Conference\\
+\years{2015 L$@$S}
+{\bf E Glassman}, C Terman, R Miller\\
+``Learner-Sourcing in an Engineering Class at Scale''\\
+\emph{ACM Learning at Scale Conference} (L@S), 2015.\\\\
+\years{2014 UIST}
+{\bf E Glassman}\\
+``Interacting with Massive Numbers of Student Solutions''\\
+\emph{ACM Symposium on User Interface Software \& Technology} (UIST), 2014.\\\\
+\years{2014 L$@$S}
+{\bf E Glassman}, R Singh, R Miller\\
+``Feature Engineering for Clustering Student Solutions''\\
+\emph{ACM Learning at Scale Conference} (L@S), 2014.\\\\
+\years{2009 NIPS}
+{\bf E Glassman}\\
+``A quadratic regulator-based heuristic for rapidly exploring state space''\\
+Women in Machine Learning Workshop (WIML)\\
+\emph{Neural Information Processing Systems} (NIPS), 2009\\
 
 %\pagebreak
-\section*{Publications in Other Fields}
+%\section*{Publications in Other Fields}
 
-\subsection*{Underactuated robotics}
-\noindent
-\emph{Conference publications}\\
-\years{2012 ICRA}Region of attraction estimation for a perching aircraft: A Lyapunov method exploiting barrier certificates \\\textbf{E Glassman}, A Desbiens, M Tobenkin, M Cutkosky, and R Tedrake\\IEEE International Conference on Robotics and Automation\\
-\emph{40\% acceptance rate}\\\\
-\years{2010 ICRA}A quadratic regulator-based heuristic for rapidly exploring state space\\\textbf{E Glassman} and R Tedrake\\ IEEE International Conference on Robotics and Automation\\[.2cm]
-\emph{Posters}\\
-\years{2009 NIPS}{\bf E Glassman}\\Women in Machine Learning Workshop\\
-Neural Information Processing Systems\\[.2cm]
-\emph{Theses}\\
-\years{2010 MIT}A quadratic regulator-based heuristic for rapidly exploring state space\\\textbf{E Glassman} \\MIT EECS M.Eng. Thesis\\
+%\subsection*{Underactuated robotics}
+%\noindent
+%\emph{Conference publications}\\
+
+%\emph{Posters}\\
+
+%\emph{Theses}\\
 
 
-\subsection*{Biomedical signal processing}
-\noindent
-\emph{Journal articles}\\
-\years{2005 TBME}A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs\\\textbf{E Glassman}\\ \emph{IEEE Transactions on Biomedical Engineering} 52 (11), 1851-1862.\\[.2cm]
-\emph{Conference publications}\\
-\years{2006 EMBS}Reducing the number of channels for an ambulatory patient-specific EEG-based epileptic seizure detector by applying recursive feature elimination\\\textbf{E Glassman}, J Guttag \\IEEE Engineering in Medicine and Biology Society
+
+%\subsection*{Biomedical signal processing}
+%\noindent
+%\emph{Journal articles}\\
+%\years{2005 TBME}A wavelet-like filter based on neuron action potentials for analysis of human scalp electroencephalographs\\\textbf{E Glassman}\\ \emph{IEEE Transactions on Biomedical Engineering} 52 (11), 1851-1862.\\[.2cm]
+%\emph{Conference publications}\\
+
 
 %\newpage
 
@@ -415,6 +510,24 @@ Neural Information Processing Systems\\[.2cm]
 \years{2008, 2011}Invited speaker, MIT Women's Technology Program\\
 \years{2008}Invited speaker, MIT CSAIL Campus Preview Weekend
 
+
+\section*{References}
+\noindent
+\begin{multicols}{2}
+
+Robert Miller
+
+Bjoern Hartmann
+
+\columnbreak
+
+Dan Russell
+
+Scott Klemmer
+
+
+\end{multicols}
+ 
 
 %\hrule
 
