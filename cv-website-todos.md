@@ -15,6 +15,12 @@ Track missing entries discussed in Mar 2026. Check off items as completed.
 
 ---
 
+## CV title audit: Trustworthy AI for Code
+
+- [ ] **Verify full roundtable title** — Confirm `\section*{Invited Keynote Talks}` lists **Trustworthy AI for Code Industry Roundtable** (2026, IBM NYC/Columbia), not the shortened **AI for Code**. As of last check, `cv.tex` has the full title under Invited Keynote Talks; **AI for Code** (2024, Google DeepMind) is a separate entry under Invited Seminar Talks — make sure they stay distinct and the roundtable is not missing or mislabeled on either CV file or the PDF.
+
+---
+
 ## Curiosity Desk appearance
 
 - [ ] **Gather details** — Episode title, air/date (or taping date), role (guest, expert, etc.), and link (WGBH / YouTube / station page if available).
@@ -38,5 +44,6 @@ Track missing entries discussed in Mar 2026. Check off items as completed.
 ## Done when
 
 - [ ] CV lists all HCIC invited talks (including 2026) with correct titles and years.
+- [ ] **Trustworthy AI for Code Industry Roundtable** appears with full title (not just “AI for Code”).
 - [ ] CV lists Curiosity Desk appearance.
 - [ ] Live website reflects Curiosity Desk (and HCIC talks if desired).
