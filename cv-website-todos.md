@@ -21,6 +21,15 @@ Track missing entries discussed in Mar 2026. Check off items as completed.
 
 ---
 
+## ISF grant review (CV)
+
+- [ ] **Confirm prior ISF entry** — Check whether ISF (Israel Science Foundation?) review appears in an older CV version or email; user recalled reviewing “again” in 2026, so note any earlier year(s) to list together if appropriate.
+- [ ] **Add to `cv.tex`** — Under `\section*{Service}` → `\subsection*{External Reviewing}` → *Grants*, add e.g. `\years{2026}Grant review\hfill ISF` (or expand an existing ISF line to `\years{YYYY, 2026}` if a prior year is found).
+- [ ] **Mirror in `cv2page.tex`** — If applicable.
+- [ ] **Rebuild PDF** — Recompile and refresh `Academic_CV.pdf` if maintained here.
+
+---
+
 ## Curiosity Desk appearance
 
 - [ ] **Gather details** — Episode title, air/date (or taping date), role (guest, expert, etc.), and link (WGBH / YouTube / station page if available).
@@ -45,5 +54,6 @@ Track missing entries discussed in Mar 2026. Check off items as completed.
 
 - [ ] CV lists all HCIC invited talks (including 2026) with correct titles and years.
 - [ ] **Trustworthy AI for Code Industry Roundtable** appears with full title (not just “AI for Code”).
+- [ ] CV lists ISF grant review for 2026 (and prior year(s) if applicable).
 - [ ] CV lists Curiosity Desk appearance.
 - [ ] Live website reflects Curiosity Desk (and HCIC talks if desired).
