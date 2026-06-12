@@ -30,6 +30,13 @@ Track missing entries discussed in Mar 2026. Check off items as completed.
 
 ---
 
+## CV sync & publications blurb
+
+- [ ] **Merge 2-pager changes into `cv.tex`** — Diff `cv2page.tex` against `cv.tex` and port any updates that exist only on the two-pager back into the main CV (e.g. service structure, talk lines, formatting tweaks). Resolve conflicts deliberately rather than overwriting wholesale.
+- [ ] **Add ACL to conference selectivity text** — In `\section*{All Publications}` intro (currently “Top-tier ACM and AAAI conferences… e.g., CHI, CSCW, UIST, IUI, HRI, and ICWSM”), add **ACL** to the list and/or prose where it fits (you have ACL workshop papers on the CV). Update `cv2page.tex` too if that blurb should stay in sync.
+
+---
+
 ## Curiosity Desk appearance
 
 - [ ] **Gather details** — Episode title, air/date (or taping date), role (guest, expert, etc.), and link (WGBH / YouTube / station page if available).
@@ -55,5 +62,6 @@ Track missing entries discussed in Mar 2026. Check off items as completed.
 - [ ] CV lists all HCIC invited talks (including 2026) with correct titles and years.
 - [ ] **Trustworthy AI for Code Industry Roundtable** appears with full title (not just “AI for Code”).
 - [ ] CV lists ISF grant review for 2026 (and prior year(s) if applicable).
+- [ ] `cv.tex` reflects merged updates from `cv2page.tex`; publications blurb mentions ACL.
 - [ ] CV lists Curiosity Desk appearance.
 - [ ] Live website reflects Curiosity Desk (and HCIC talks if desired).
